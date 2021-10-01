@@ -58,7 +58,7 @@ except:
 
 if (encrypting):
     if whichcipher == 'julia':
-        keybytes = bytes(os.urandom(13))
+        keybytes = bytes(os.urandom(13))    #return 13 random bytes for cryptographic use
         keyshift = keybytes[0] % 7 + 1
         keyxor = [] 
         keyxorasstring = ""
